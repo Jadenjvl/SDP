@@ -9,65 +9,80 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background-color: #222;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 4em 2em;
+            max-width: 800px;
+            margin: auto;
         }
         header {
-            background-color: #000;
-            color: #4c00b0;
-            padding: 15px;
+            background: #444;
+            color: white;
+            padding: 5em 2em;
             text-align: center;
         }
-        main {
-            padding: 20px;
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.5em;
+        }
+        footer {
             text-align: center;
-        }
-        h1, h2 {
-            color: #4c00b0;
-        }
-        .button {
-            background-color: #4c00b0;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #8e00d1;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #000;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 2em;
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="eula.html">EULA</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
 
-<header>
-    <h1>Welcome to Software Data Protection (SDP)</h1>
-    <p>Secure Your Digital Assets</p>
-</header>
+    <header id="home">
+        <h1>Welcome to SDP</h1>
+        <p>Protect your code — software, websites, and everything in between. Defend against misuse. Empower users. Enforce terms.</p>
+    </header>
 
-<main>
-    <h2>Welcome to the official Software Data Protection (SDP) website!</h2>
-    <p>SDP is a cutting-edge solution designed to safeguard software, websites, and applications from unauthorized tampering, reverse engineering, and code exploitation.</p>
-    <p>By using an SDP-protected platform, you agree to our End-User License Agreement (EULA), ensuring a secure and compliant digital environment.</p>
-    <p>If you wish to apply to use SDP, please click the button below to apply.</p>
-    <a href="mailto:jaden@jvlshop.com" class="button">Apply Here</a>
-</main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Software Data Protection (SDP) is a code protection and enforcement platform that helps developers secure their software, websites, and applications against reverse engineering, unauthorized use, and misuse. We handle digital abuse reports on your behalf — so you don't have to deal with agencies like the FBI's cybercrime division yourself. Let us take that weight off your shoulders.</p>
+    </section>
 
-<footer class="footer">
-    <p>&copy; 2024 Software Data Protection. All rights reserved.</p>
-	   <a href="eula.html" class="button">VIEW OUR EULA</a>
-</footer>
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>SDP reviews, verifies, and submits reports of intellectual property misuse or unauthorized code use. Our team handles digital complaints and enforcement steps so developers can focus on building, not battling violations. We’re the buffer between you and complicated cybercrime processes.</p>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Software Data Protection. All rights reserved.</p>
+    </footer>
 </body>
 </html>
